@@ -16,5 +16,7 @@ cask "infernode" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "InferNode.app"
 end
