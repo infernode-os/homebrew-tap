@@ -19,7 +19,9 @@ jobs:
         id: up
         env:
           GH_TOKEN: ${{ github.token }}
-        run: echo "version=$(scripts/update.sh)" >> "$GITHUB_OUTPUT"
+        run: |
+          version=$(scripts/update.sh)
+          echo "version=$version" >> "$GITHUB_OUTPUT"
       - name: Commit if changed
         run: |
           git diff --quiet && exit 0

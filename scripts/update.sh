@@ -8,7 +8,7 @@ for app in infernode xenith
 do
   arm=$(echo "${sums}" | awk -v f="${app}-${ver}-macos-arm64.dmg" '$2==f {print $1}')
   intel=$(echo "${sums}" | awk -v f="${app}-${ver}-macos-amd64.dmg" '$2==f {print $1}')
-  [[ -n "${arm}" ]] && [[ -n "${intel}" ]] || {
+  [ -n "${arm}" ] && [ -n "${intel}" ] || {
     echo "${app} ${ver}: dmg checksums not in SHA256SUMS.txt" >&2
     exit 1
   }
