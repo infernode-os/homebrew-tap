@@ -1,9 +1,9 @@
 cask "xenith" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.8.0"
-  sha256 arm:   "307b380089b51ba46f155b28a803807bf7a24ebbe7970f3d0c82400e61cf337f",
-         intel: "6a2128fb73e7c87b633ad978cf10467c2d75cba74fc84ff56b277a1466c7d70c"
+  version "0.8.1"
+  sha256 arm:   "8fce8ea1988f78543664b9bb80bd82b2f74ae2d48354d8733153c81c44f3cf47",
+         intel: "fd26fbc6dcaba7c8a545ebb26cc4bd9e4c4db6fe18aff623369d330b1016d904"
 
   url "https://github.com/infernode-os/infernode/releases/download/v#{version}/xenith-#{version}-macos-#{arch}.dmg",
       verified: "github.com/infernode-os/infernode/"

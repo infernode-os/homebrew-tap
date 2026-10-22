@@ -1,9 +1,9 @@
 cask "infernode" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.8.0"
-  sha256 arm:   "7d88d6fcb9769cbd2214aed59db59e40fb43684499a4688dc01c5e0e72223dc5",
-         intel: "6fbcc7419cd6e8826ab85d74aab9cc2eb44334616146506145fc2e760517d3f9"
+  version "0.8.1"
+  sha256 arm:   "9b732e7845251aa678cffe5f6af51143ac0959191351646559b1af35511f9c30",
+         intel: "ed056b021273154b0ac95f03c3b734a3846c90f35b45052b5b137fb51fe7c7f6"
 
   url "https://github.com/infernode-os/infernode/releases/download/v#{version}/infernode-#{version}-macos-#{arch}.dmg",
       verified: "github.com/infernode-os/infernode/"
